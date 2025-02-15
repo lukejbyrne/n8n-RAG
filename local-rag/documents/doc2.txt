@@ -1,0 +1,17 @@
+**Title:** IT Security and Acceptable Use Policy  
+**Content:**  
+To ensure the security of company data, all employees must follow the IT Security Policy.  
+
+#### **Password Policy**  
+- Passwords must be at least **12 characters long** and contain **uppercase, lowercase, numbers, and special characters**.  
+- Passwords must be changed **every 90 days**.  
+
+#### **Device Usage**  
+- Only company-approved devices may be used to access sensitive data.  
+- Personal devices must be enrolled in the **MDM (Mobile Device Management)** system.  
+- USB storage devices are prohibited unless explicitly authorized.  
+
+#### **Email & Internet Usage**  
+- Do not open suspicious emails or attachments. Report phishing attempts immediately.  
+- Company email is for business use only. Do not share confidential data outside the organization.  
+- Internet usage should align with business needs; avoid visiting non-work-related websites during office hours.  

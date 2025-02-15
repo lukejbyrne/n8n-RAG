@@ -1,0 +1,18 @@
+**Title:** Employee Expense Reimbursement Policy  
+**Content:**  
+Employees can claim business-related expenses as per the guidelines below.  
+
+#### **Eligible Expenses**  
+- Travel: Flights, hotels, taxis, and public transport for business trips.  
+- Meals: Up to **£50 per day** for business-related meals.  
+- Office Supplies: Only pre-approved purchases will be reimbursed.  
+
+#### **Reimbursement Process**  
+- Submit expense claims via the **Company Expense Portal** within **30 days**.  
+- Attach receipts for all expenses above **£10**.  
+- Manager approval is required before submission.  
+
+#### **Non-Reimbursable Expenses**  
+- Personal entertainment, alcohol, or luxury services.  
+- Unapproved travel upgrades or non-business-related expenses.  
+- Late submission of expense claims beyond **30 days**.  

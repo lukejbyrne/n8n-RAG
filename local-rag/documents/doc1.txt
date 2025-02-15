@@ -1,0 +1,18 @@
+**Title:** Company Employee Handbook  
+**Content:**  
+Welcome to [Company Name]! Our employee handbook provides guidelines on workplace conduct, leave policies, benefits, and more.  
+
+#### **Work Hours & Remote Work Policy**  
+- Standard working hours: **9:00 AM - 5:00 PM, Monday to Friday**  
+- Employees are expected to be available during working hours unless approved for flexible work arrangements.  
+- Remote work is allowed **2 days per week**, subject to manager approval.  
+
+#### **Leave Policy**  
+- Employees are entitled to **28 days of annual leave** (including public holidays).  
+- Sick leave requires a doctor’s note after **3 consecutive days** of absence.  
+- Maternity/Paternity leave: **6 months paid for mothers, 2 weeks paid for fathers**.  
+
+#### **Code of Conduct**  
+- Treat colleagues and clients with respect.  
+- Harassment, discrimination, or unethical behavior will lead to disciplinary action.  
+- All employees must comply with company data security policies.  
