@@ -1,104 +1,50 @@
-# Company Documents Chat - AI-Powered HR Assistant
+# Local-RAG: Local Retrieval Augmented Generation
 
-## Overview
-This project is an AI-powered HR assistant that answers employee questions based on company policies. It retrieves relevant information from internal company documents using Google Drive, embeds the text into a Pinecone vector database, and queries the Groq chat model to provide accurate responses.
+Local-RAG is a Python application that combines local document retrieval with a pre-trained language model (LLM) to provide fast and accurate responses. It uses ChromaDB for efficient document indexing and retrieval, and SentenceTransformers for document embeddings.
 
-## Features
-- **Google Drive Integration**: Fetches and processes company documents automatically.
-- **Pinecone Vector Database**: Stores and retrieves document embeddings efficiently.
-- **Google Gemini API**: Generates embeddings for text chunks.
-- **Groq Chat Model**: Provides AI-powered responses to user queries.
-- **Interactive Chat Interface**: Users can ask HR-related questions via a console-based chat system.
-- **Automated Document Processing**: New and updated documents are automatically processed and indexed.
+## Key Features
 
----
+- Fast document retrieval using ChromaDB.
+- Pre-trained LLM (e.g., OpenAI's GPT-3) for generating responses.
+- Integration with Google PaLM for advanced language modeling.
 
-## Prerequisites
-Before running the project, ensure you have the following:
-- Python 3.8+
-- A Google Cloud service account with Drive API access
-- A Pinecone API key
-- A Google Gemini API key
-- A Groq API key
+## Installation Steps
 
-### Required Python Packages
-Install the dependencies using pip:
-```bash
-pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client pinecone-client google-generativeai rich dotenv groq
-```
+1. Clone the repository: `git clone https://github.com/your-username/local-rag.git`
+2. Navigate to the project directory: `cd local-rag`
+3. Create a virtual environment (optional):
+   - Run `./reset_env.sh` (Linux/macOS) or `reset_env.bat` (Windows) to create and activate a virtual environment.
+4. Install dependencies: `pip install -r requirements.txt`
 
----
+## Usage
 
-## Setup
-### 1. Environment Variables
-Create a `.env` file in the project root and add the following environment variables:
-```env
-GOOGLE_DRIVE_SERVICE_ACCOUNT_FILE=path/to/service-account.json
-PINECONE_API_KEY=your-pinecone-api-key
-PINECONE_ENV=your-pinecone-environment
-PINECONE_INDEX_NAME=your-pinecone-index-name
-GOOGLE_GEMINI_API_KEY=your-google-gemini-api-key
-GROQ_API_KEY=your-groq-api-key
-GOOGLE_DRIVE_FOLDER_ID=your-google-drive-folder-id
-```
+1. Set up ChromaDB and Google PaLM by following the instructions in `app.py`.
+2. Run the chat interface: `python chat.py`
+3. Type your queries and enjoy the fast and accurate responses!
 
-### 2. Configure Google Drive API
-- Enable the Google Drive API in the Google Cloud Console.
-- Generate a service account JSON key and specify its path in the `.env` file.
+## Contributing
 
-### 3. Initialize Pinecone Index
-Ensure your Pinecone index exists, or the script will create one automatically.
+Contributions are welcome! Please follow these guidelines:
 
----
-
-## Running the Application
-
-### Start the HR Chat Assistant
-```bash
-python chat.py
-```
-
-### Manually Update Indexed Documents
-```bash
-python app.py
-```
-
----
-
-## How It Works
-### Document Processing (`app.py`)
-1. **Fetch Files**: Retrieves documents from Google Drive.
-2. **Process Text**: Downloads, splits, and embeds document content.
-3. **Store in Pinecone**: Saves text chunks and embeddings in a vector database.
-4. **Track Changes**: Detects new, modified, or deleted files.
-
-### Chat Assistant (`chat.py`)
-1. **User Query**: Accepts a question from the user.
-2. **Retrieve Relevant Data**: Queries Pinecone for similar document sections.
-3. **Generate Response**: Uses Groq's chat model to generate an HR response.
-
----
-
-## Example Usage
-```
-Your Question> What is the company's leave policy?
-
-Answer: Employees are entitled to 28 days of annual leave, including public holidays. Refer to the HR document for more details.
-```
-
----
-
-## Future Improvements
-- Implement a web-based UI.
-- Support multiple file formats (e.g., PDFs, Word docs).
-- Enhance document processing speed.
-- Add authentication for user queries.
-
----
+- Fork the repository and create a new branch for your changes.
+- Make your changes and ensure they follow the project's coding style.
+- Write clear and concise commit messages.
+- Submit a pull request and describe your changes.
 
 ## License
+
 This project is licensed under the MIT License.
 
-## Contributions
-Feel free to submit pull requests or open issues for suggestions and improvements.
+## Acknowledgments
 
+- ChromaDB: https://github.com/chroma-core/chroma
+- SentenceTransformers: https://github.com/UKPLab/sentence-transformers
+- OpenAI's GPT-3: https://openai.com/blog/gpt-3-apps/
+- Google PaLM: https://ai.googleblog.com/2022/10/palm-scaling-language-model-training.html
+
+## Badges
+
+[![GitHub stars](https://img.shields.io/github/stars/your-username/local-rag)](https://github.com/your-username/local-rag/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/your-username/local-rag)](https://github.com/your-username/local-rag/network)
+[![GitHub issues](https://img.shields.io/github/issues/your-username/local-rag)](https://github.com/your-username/local-rag/issues)
+[![GitHub license](https://img.shields.io/github/license/your-username/local-rag)](https://github.com/your-username/local-rag/blob/main/LICENSE)
